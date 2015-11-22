@@ -13,4 +13,4 @@ add_library(openp2p-foldersync STATIC
 	NodeReader.cpp
 	NodeWriter.cpp
 	)
-
+install(TARGETS openp2p-foldersync DESTINATION lib/openp2p)

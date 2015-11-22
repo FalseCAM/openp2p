@@ -6,4 +6,4 @@ add_library(openp2p-transport STATIC
 	BufferIterator.cpp
 	StringStream.cpp
 	)
-
+install(TARGETS openp2p-transport DESTINATION lib/openp2p)

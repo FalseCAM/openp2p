@@ -9,3 +9,4 @@ add_library(openp2p-event STATIC
 	Wait.cpp
 	)
 
+install(TARGETS openp2p-event DESTINATION lib/openp2p)

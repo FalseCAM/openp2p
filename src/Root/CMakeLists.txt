@@ -1,4 +1,4 @@
-add_library(openp2p-rootnetwork STATIC
+add_library(openp2p-root STATIC
 	AuthenticatedSocket.cpp
 	Endpoint.cpp
 	EndpointMapSocket.cpp
@@ -24,3 +24,4 @@ add_library(openp2p-rootnetwork STATIC
 	DHT/RPCServer.cpp
 	DHT/Service.cpp
 	)
+install(TARGETS openp2p-root DESTINATION lib/openp2p)

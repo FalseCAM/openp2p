@@ -7,3 +7,4 @@ add_library(openp2p-crypt STATIC
 	Hash/MD5Stream.cpp
 	Hash/SHA256Stream.cpp
 	)
+install(TARGETS openp2p-crypt DESTINATION lib/openp2p)

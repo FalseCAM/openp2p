@@ -11,6 +11,10 @@ endif("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
 set(CMAKE_DISABLE_SOURCE_CHANGES ON)
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
 
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 # Enable compiler tests.
 enable_testing()
 
@@ -78,4 +82,7 @@ add_subdirectory(tests)
 
 # Tools.
 add_subdirectory(tools)
+
+install(DIRECTORY include/p2p/ DESTINATION include/p2p
+        FILES_MATCHING PATTERN "*.hpp")
 

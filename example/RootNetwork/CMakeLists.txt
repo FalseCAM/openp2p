@@ -3,7 +3,7 @@ add_executable(client
 	)
 
 target_link_libraries(client
-	openp2p-rootnetwork
+	openp2p-root
 	openp2p-udp
 	openp2p-ip
 	openp2p-crypt

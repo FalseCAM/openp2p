@@ -4,7 +4,7 @@ add_executable(networkGenerator
 	)
 
 target_link_libraries(networkGenerator
-	openp2p-rootnetwork
+	openp2p-root
 	openp2p-udp
 	openp2p-ip
 	openp2p-crypt
@@ -25,7 +25,7 @@ add_executable(rootNetworkClient
 	)
 
 target_link_libraries(rootNetworkClient
-	openp2p-rootnetwork
+	openp2p-root
 	openp2p-udp
 	openp2p-ip
 	openp2p-crypt
